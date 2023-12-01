@@ -14,7 +14,7 @@ class CarFactory(ABC):
         battery = SplindlerBattery(current_date, last_service_date)
         return Car(engine, battery)
     
-    def greate_glissade(self, current_date, last_service_date, current_mileage: int, last_service_mileage: int):
+    def create_glissade(self, current_date, last_service_date, current_mileage: int, last_service_mileage: int):
         engine = WilloughbyEngine(current_mileage, last_service_mileage)
         battery = SplindlerBattery(current_date, last_service_date)
         return Car(engine, battery)
