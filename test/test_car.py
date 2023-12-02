@@ -1,8 +1,9 @@
 import unittest
 from datetime import datetime
+import os
+print(f"Boom: {os.getcwd()}")
 
 from carfactory import CarFactory
-
 
 class TestCalliope(unittest.TestCase):
     def test_battery_should_be_serviced(self):
